@@ -6,7 +6,7 @@ setup(
       url='http://github.com/lycis/crirm',
       download_url='http://github.com/lycis/crirm',
       author_email='daniel@deder.at',
-      version=0.2,
+      version=0.3,
       packages=find_packages(exclude=['contrib', 'docs', 'tests']),
       name='crirm',
       license='MIT',
