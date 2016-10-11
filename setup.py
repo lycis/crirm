@@ -9,7 +9,7 @@ config = {
     'url': 'http://github.com/lycis/crirm',
     'download_url': 'http://github.com/lycis/crirm',
     'author_email': 'daniel@deder.at',
-    'version': '0.1',
+    'version': '0.2',
     'install_requires': ['nose'],
     'packages': ['crirm'],
     'scripts': ['bin/crirm'],
