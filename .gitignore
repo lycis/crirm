@@ -2,3 +2,5 @@
 crirm/__pycache__
 dist
 MANIFEST
+build
+crirm.egg-info/

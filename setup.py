@@ -13,7 +13,8 @@ config = {
     'install_requires': ['nose'],
     'packages': ['crirm'],
     'scripts': [],
-    'name': 'crirm'
+    'name': 'crirm',
+    'license': 'MIT'
 }
 
 setup(**config)
