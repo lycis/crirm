@@ -8,9 +8,9 @@ import sys
 options = None
 
 
-def main(args):
+def main():
     global options
-    options = parse_options(args[1:])
+    options = parse_options(sys.argv[1:])
 
     if options.recursive:
         for root, dirs, files in os.walk(options.path, topdown=True):
@@ -81,6 +81,3 @@ def delete(fname):
         os.removedirs(fname)
 
     print("deleted: {}\n".format(fname))
-
-if __name__ == '__main__':
-    main(sys.argv)

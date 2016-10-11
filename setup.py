@@ -1,20 +1,18 @@
-try:
-    from setuptools import setup
-except ImportError:
-    from distutils.core import setup
+from setuptools import setup, find_packages
 
-config = {
-    'description': 'CRIteria REMove. Delete files based on various criteria like age, file size etc.',
-    'author': 'Daniel Eder',
-    'url': 'http://github.com/lycis/crirm',
-    'download_url': 'http://github.com/lycis/crirm',
-    'author_email': 'daniel@deder.at',
-    'version': '0.2',
-    'install_requires': ['nose'],
-    'packages': ['crirm'],
-    'scripts': ['bin/crirm'],
-    'name': 'crirm',
-    'license': 'MIT'
-}
-
-setup(**config)
+setup(
+      description='CRIteria REMove. Delete files based on various criteria like age, file size etc.',
+      author='Daniel Eder',
+      url='http://github.com/lycis/crirm',
+      download_url='http://github.com/lycis/crirm',
+      author_email='daniel@deder.at',
+      version=0.2,
+      packages=find_packages(exclude=['contrib', 'docs', 'tests']),
+      name='crirm',
+      license='MIT',
+      entry_points={
+        'console_scripts': [
+            'crirm=crirm.main:main',
+        ],
+      }
+)
