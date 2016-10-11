@@ -81,3 +81,6 @@ def delete(fname):
         os.removedirs(fname)
 
     print("deleted: {}\n".format(fname))
+
+if __name__ == '__main__':
+    main()
