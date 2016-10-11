@@ -3,6 +3,7 @@ import os
 import re
 import crirm.util
 import crirm.criteria as criteria
+import sys
 
 options = None
 
@@ -80,3 +81,6 @@ def delete(fname):
         os.removedirs(fname)
 
     print("deleted: {}\n".format(fname))
+
+if __name__ == '__main__':
+    main(sys.argv)

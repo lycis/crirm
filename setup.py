@@ -12,7 +12,7 @@ config = {
     'version': '0.1',
     'install_requires': ['nose'],
     'packages': ['crirm'],
-    'scripts': [],
+    'scripts': ['bin/crirm'],
     'name': 'crirm',
     'license': 'MIT'
 }
