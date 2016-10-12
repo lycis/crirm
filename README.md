@@ -1,4 +1,5 @@
 # crirm - Criteria Remove
+[![PyPI version](https://badge.fury.io/py/crirm.svg)](https://badge.fury.io/py/crirm)
 This is a small and neat tool to clean file system trees by removing files
 matching specified criteria.
 
